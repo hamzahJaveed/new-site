@@ -4,11 +4,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* nevbar */
+
 .nevbar {
     height: 5rem;
     width: 100%;
-    background-color: rgb(19, 19, 139, 0.500);
+    background-color: hwb(240 11% 53% / 0.603);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+/* logo */
 
 .nevlogo {
     height: 4rem;
@@ -16,16 +23,49 @@
     background-image: url("logoj.jpg");
     background-size: cover;
     border-radius: 50%;
-    position: relative;
-    top: 0.5rem;
-    left: 2rem;
+    
 }
 
 .border {
-    border: 2px solid transparent);
+    border: 2px solid transparent;
     border-radius: 50%;
 }
 
 .border:hover {
-    border: 2px solid rgb(255, 255, 255, 0.500);
+    border: 2px solid rgb(255, 255, 255, 0.800);
+}
+
+/* search bar*/
+
+.searchBar {
+    height: 3rem;
+    width: 25rem;
+    color: white;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15rem;
+}
+
+/* select */
+
+#select {
+    height: 2.8rem;
+    width: 6rem;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 15rem 0% 0% 15rem;
+    padding-left: 0.5rem;
+}
+
+/* input */
+
+input {
+    height: 2.8rem ;
+    background-color: pink;
+    font-size:medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 1rem;
+    color: white;
+    border-radius: 0% 15rem 15rem 0%;
 }
