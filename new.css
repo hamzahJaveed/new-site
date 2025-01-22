@@ -1,5 +1,4 @@
 * {
-    background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
@@ -8,23 +7,10 @@
 
 body {
     background-color: #8174A0;
-    height: 100vh;
-}
-
-.faltu {
     height: 100%;
-    width: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
+    width: 100%;
 }
 
-#child {
-    height: 10em;
-    width: 20rem;
-    background-color: rgba(223, 222, 222, 0.11);
-}
 /* nevbar */
 
 .nevbar {
@@ -117,7 +103,7 @@ input {
     background-color: transparent;
     color: black;
     font-size:x-large;
-    margin-left: 1rem;
+    margin-left: 1rem;        
 }
 
 .sarIcon:hover {
@@ -127,24 +113,36 @@ input {
 /* helping tools */
 
 .helps {
-    height: 3rem;
+    height: 5rem;
     width: 30rem;
     background-color: transparent;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
 }
 
 .tools {
-    height: 3rem;
+    height: 2rem;
     width: 6rem;
     background-color: transparent;
     text-decoration: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:start;
     border-bottom: 2px solid transparent;
     font-size:medium;
+    animation: first 1s 1 ease-out forwards;
+
+}
+
+@keyframes first {
+    from {
+        transform: translatey(0%);
+        position:relative;
+    }
+    to {
+        transform: translatey(2rem);
+    }
 }
 
 .tools:hover {
@@ -156,12 +154,30 @@ input {
 }
 
 .extra {
-    width: 9rem;
+    width: 8rem;
 }
 
 /* menuIcon */
 
+.menuParent {
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
 .menuIcon {
     font-size: larger;
-    margin-left: 3rem;
+}
+
+.menuParent:hover {
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+.menuIcon:hover{
+    color: rgb(238, 255, 0);
 }
