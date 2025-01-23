@@ -20,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: fixed;
+    /* position: fixed; top: 0%; */
 }
 
 /* logo */
@@ -180,4 +180,88 @@ input {
 
 .menuIcon:hover{
     color: rgb(238, 255, 0);
+}
+
+/* section 2 */
+/* film row 1  */
+
+h1 {
+    height: 5rem;
+    margin-top: 1rem;
+    padding-left: 5rem;
+    background-color: rgba(43, 40, 43, 0.459);
+    display: flex;
+    align-items: center;
+}
+
+.firstRow {
+    height: 40rem;
+    width: 100%;
+    background-color: #e284ee75;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@keyframes darker {
+    from{
+        transform: translatey(0);
+    }
+    to {
+        transform: translatey(2rem);
+
+    }
+}
+
+/* main div of all movies */
+
+.dark {
+    height: 35rem;
+    width: 19rem;
+    background-color: #770c97;
+    animation-name: darker;
+    border: 2px solid rgba(255, 255, 255, 0.651);
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.dark:hover {
+    border: 2px solid white;
+}
+
+/* /div */
+
+.pic-one {
+    background-image: url("dark.webp");
+    background-size: cover;
+    margin: 1rem;
+    height: 25rem;
+    border: 1px solid transparent;
+}
+
+.pic:active {
+    border: 2px solid white;
+}
+
+.pic-one-text {
+    height: 100hv;
+    width: 100hv;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* box 2 */
+
+.pic-two {
+    background-image: url("secret\ building.png");
+    background-size: cover;
+    margin: 1rem;
+    height: 25rem;
+    border: 1px solid transparent;
+}
+
+.pic-one-text {
+    text-align: center;
+    margin-top: 0;
+    padding: 1rem;
 }
