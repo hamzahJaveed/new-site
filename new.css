@@ -187,7 +187,6 @@ input {
 
 h1 {
     height: 5rem;
-    margin-top: 1rem;
     padding-left: 5rem;
     background-color: rgba(43, 40, 43, 0.459);
     display: flex;
@@ -264,4 +263,64 @@ h1 {
     text-align: center;
     margin-top: 0;
     padding: 1rem;
+}
+
+/* box 3 */
+
+.pic-three {
+    background-image: url("Tarot.jpeg");
+    background-size: cover;
+    margin: 1rem;
+    height: 25rem;
+    border: 1px solid transparent;
+}
+
+/* box 4 */
+
+.pic-four {
+    background-image: url("Ouija.jpeg");
+    background-size: cover;
+    margin: 1rem;
+    height: 25rem;
+    border: 1px solid transparent;
+}
+
+/* box 5 */
+
+.pic-five {
+    background-image: url("unborn.jpeg");
+    background-size: cover;
+    margin: 1rem;
+    height: 25rem;
+    border: 1px solid transparent;
+}
+
+/* box 6 */
+
+.pic-six {
+    background-image: url("rings.jpeg");
+    background-size: cover;
+    margin: 1rem;
+    height: 25rem;
+    border: 1px solid transparent;
+}
+
+/* box 7 */
+
+.pic-seven {
+    background-image: url("bagman.jpeg");
+    background-size: cover;
+    margin: 1rem;
+    height: 25rem;
+    border: 1px solid transparent;
+}
+
+/* box 8 */
+
+.pic-eight {
+    background-image: url("evel\ dead.jpeg");
+    background-size: cover;
+    margin: 1rem;
+    height: 25rem;
+    border: 1px solid transparent;
 }
