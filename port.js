@@ -242,6 +242,7 @@
 // ARRAY LOOP TO WRITE IT IN COLUM (WHILE LOOP)
 
 // let heros = ["ironman", "spideman", "captanam", "Dr.Strange", "thor"];
+// console.log(heros);
 // let t=0;
 
 // while (t<heros.length) {
@@ -259,6 +260,8 @@
 //     t++;
 // } while(t>heros.length);
 
+// avarege of marks //
+
 // let marks = [85, 97, 44, 37, 76, 60];
 // let sum = 0;
 
@@ -266,16 +269,18 @@
 //     sum += val;
 // }
 
+// console.log(sum);
+
 // let avg = sum / 6;
 // console.log(`the avg marks of class = ${avg}`);
 
 // let items = [250, 645, 300, 900, 50];
 // let offer;
 
-// for (let i = 0; i < items.length; i++) {
-//     offer = items[i] / 10;
-//     items[i] -= offer;
-//     console.log(items[i]);
+// for (let i = 0; i < items.length; i++) {  // 0<5 -true 0++
+//     offer = items[i] / 10; // == 25, 64.5, 30, 90, 5
+//     console.log(offer); // 25, 64.5, 30, 90, 5
+//     items[i] -= offer; // 250 - 25 = 225 ... it will store in items[i]
 // }
 // console.log(items);
 
@@ -291,4 +296,74 @@
 //     i++;
 // }
 
-let company = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+// let company = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+// let val = company.slice(2,4);
+// console.log(val);
+
+// let product = {
+//     Name : 'pen' ,
+//     about : 'parker jotter standart ct ball pen (black)' ,
+//     rate : "4 stars" ,
+//     offer : "5% off" ,
+//     price : 270 + "$" 
+// }
+
+// console.log(product);
+// console.log(length(product));
+
+// let profile = {
+//     Name : "javeed" ,
+//     posts : 195 ,
+//     followers : 569 + "k" ,
+//     isfollow : false ,
+//     type : "enterprenur"
+// }
+
+// let profile = ["javeed", "569k"]
+
+// console.log(profile);
+
+// let choose = prompt("enter number");
+
+// if (choose % 5 === 0) {
+//     console.log("multiple of 5");
+// }
+// else {
+//     console.log('not multiple of 5');
+// }
+
+// slice in array //
+
+// let arr = ["javeed", "tehseen", "kaneez", "zaveriya", "ummi hani", "shanti"]
+// console.log(arr);
+
+// console.log(arr.slice(2,5));
+
+// splice in array //
+
+// let arr = ["javeed", "tehseen", "kaneez", "zaveriya", "ummi hani", "shanti"]
+// console.log(arr);
+
+// arr.splice(3,  1, 101);
+// console.log(arr);
+
+// arr.splice(2);
+// console.log(arr);
+
+// let companies = ["bloomberg", "microsoft", "uber", "Google", "IBM", "Netflix"];
+// console.log(companies);
+
+// companies.shift();
+// console.log(companies);
+
+// companies.splice(1,1, "Ola");
+// console.log(companies);
+
+// companies.push("Amazone");
+// console.log(companies)
+
+// let items = [250, 645, 300, 900, 50];
+// let offer = 0;
+
+// // for(offer<items.length; )
+// items = (let after of items.length);
