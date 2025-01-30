@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #8174A0;
+    background-color: #b31cc7;
     height: 100%;
     width: 100%;
 }
@@ -14,8 +14,8 @@ body {
 /* nevbar */
 
 .nevbar {
-    height: auto;
-    width: auto;
+    height: 5rem;
+    width: 100%;
     background-color: #441752;
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@ input {
     font-size:medium;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 1rem;
-    color: white;
+    color: black;
     border-radius: 0.5rem;
     margin-left: 1rem;
 }
@@ -204,7 +204,7 @@ h1 {
 .firstRow {
     height: 40rem;
     width: 100%;
-    background-color: #e284ee75;
+    /* background-color: #e284ee75; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -224,7 +224,7 @@ h1 {
 .dark {
     height: 35rem;
     width: 19rem;
-    background-color: #770c97;
+    background-color: #441752;
     animation-name: darker;
     border: 2px solid rgba(255, 255, 255, 0.651);
     animation-duration: 1s;
@@ -407,4 +407,62 @@ h1 {
     margin: 1rem;
     height: 25rem;
     border: 1px solid transparent;
+}
+
+.back-box a{
+    height: 50px;
+    width: 100%;
+    background-color: #770c97c5;
+    text-align: center;
+    color: white;
+    font-weight: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: small;
+}
+
+.mainfooter {
+    height: 400px;
+    width: 100%;
+    background-color: #441752;
+}
+
+.text-contect {
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.textbox-one {
+    height: 295px;
+    width: 130px;
+    color: white;
+    text-align:left;
+    text-wrap: wrap;
+}
+
+.textbox-head {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.textbox-head-body {
+    font-size: 0.9rem;
+    font-weight: normal;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.textbox-one a {
+    height: 2rem;
+    width: 150px;
+    display: flex;
+    text-decoration: none;
+    color: #cccccc;
+    font-size: small;
 }

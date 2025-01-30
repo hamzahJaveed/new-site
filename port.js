@@ -366,4 +366,56 @@
 // let offer = 0;
 
 // // for(offer<items.length; )
-// items = (let after of items.length);
+// items = (let after of items.length)
+
+// let num = prompt("guess the number");
+
+// if (num == 7) {
+//     console.log("congratulation you are currect")
+// }
+// else {
+//     console.log('oops wrong!')
+// }
+
+// let Name = prompt("enter your name");
+// console.log(`@${Name}07`)
+
+// let marks = [85, 97, 44, 37, 76, 60];
+// let total=0;
+// for (let val of marks) {
+//     total += val;
+// }
+// let avg = total / 6;
+// console.log(avg);
+
+// let items = [250, 645, 300, 900, 50];
+// let off;
+
+// for(let i = 0; i < items.length; i++) {
+//     off = items[i] / 10;
+//     items[i] -= off;
+// }
+
+// console.log(items);
+
+// let companies = ["bloomberg", "microsoft", "uber", "google", "netflix"];
+// console.log(companies);
+
+// companies.shift();
+// console.log(companies);
+
+
+// companies.splice(1, 1, "ola");
+// console.log(companies);
+
+
+// companies.push();
+// console.log(companies);
+
+function myFun(a, b) {
+    wed = [a+b, a-b, a*b];
+    return wed;
+}
+
+let val = myFun(4, 3);
+console.log(val);

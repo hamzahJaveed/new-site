@@ -4,420 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T-J movies</title>
-    <!-- <link rel="stylesheet" href="new.css"> -->
+    <link rel="stylesheet" href="new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <style>
-        * {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0%;
-    padding: 0,1rem;
-}
-
-body {
-    background-color: #8174A0;
-    height: 100%;
-    width: 100%;
-}
-
-/* nevbar */
-
-.nevbar {
-    height: auto;
-    width: auto;
-    background-color: #441752;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* position: fixed; top: 0%; */
-}
-
-/* logo */
-
-.nevlogo {
-    height: 4rem;
-    width: 4rem;
-    background-image: url("logoj.jpg");
-    background-size: cover;
-    border-radius: 50%;
-    
-}
-
-.border {
-    border: 2px solid transparent;
-    border-radius: 50%;
-}
-
-.border:hover {
-    border: 2px solid rgb(255, 255, 255, 0.800);
-}
-
-/* search bar*/
-
-.searchBar {
-    height: 3.5rem;
-    width: 27rem;
-    color: white;
-    background-color: #b31cc7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1rem;
-    border: 2px solid rgb(0, 0, 0);
-}
-
-.border1 {
-    border: 2px solid transparent;    
-}
-
-.border1:hover {
-    border: 2px solid rgb(255, 255, 255, 0.800);
-}
-
-/* select */
-
-#select {
-    height: 2.8rem;
-    width: 7.5rem;
-    background-color: rgba(0, 0, 0, 0.842);
-    border-radius:  .5rem;
-    padding-left: 0.5rem;
-}
-
-option {
-    background-color: #b31cc7;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-}
-
-.border {
-    border: 2px solid transparent;
-}
-
-.border:hover {
-    border: 2px solid rgb(255, 255, 255, 0.800);
-}
-
-/* input */
-
-input {
-    height: 2.8rem ;
-    width: 14rem;
-    background-color: rgb(243, 217, 231);
-    font-size:medium;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 1rem;
-    color: white;
-    border-radius: 0.5rem;
-    margin-left: 1rem;
-}
-
-/* search icon */
-
-.sarIcon {
-    background-color: transparent;
-    color: black;
-    font-size:x-large;
-    margin-left: 1rem;        
-}
-
-.sarIcon:hover {
-    color: rgb(238, 255, 0);
-}
-
-/* helping tools */
-
-.helps {
-    height: 5rem;
-    width: 30rem;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: start;
-}
-
-.tools {
-    height: 2rem;
-    width: 6rem;
-    background-color: transparent;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items:start;
-    border-bottom: 2px solid transparent;
-    font-size:medium;
-    animation: first 1s 1 ease-out forwards;
-
-}
-
-@keyframes first {
-    from {
-        transform: translatey(0%);
-        position:relative;
-    }
-    to {
-        transform: translatey(2rem);
-    }
-}
-
-.tools:hover {
-    border-bottom: 2px solid rgb(255, 255, 255);
-    border-radius: 15%;
-    color: rgb(255, 255, 255);
-    font-size: large;
-    font-weight: 700;
-}
-
-.extra {
-    width: 8rem;
-}
-
-/* menuIcon */
-
-.menuParent {
-    height: 3rem;
-    width: 3rem;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid transparent;
-    border-radius: 50%;
-}
-
-.menuIcon {
-    font-size: larger;
-}
-
-.menuParent:hover {
-    background-color: rgba(0, 0, 0, 0.281);
-}
-
-.menuIcon:hover{
-    color: rgb(238, 255, 0);
-}
-
-/* section 2 */
-/* film row 1  */
-
-h1 {
-    height: 5rem;
-    padding-left: 5rem;
-    background-color: rgba(43, 40, 43, 0.459);
-    display: flex;
-    align-items: center;
-}
-
-.firstRow {
-    height: 40rem;
-    width: 100%;
-    background-color: #e284ee75;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-@keyframes darker {
-    from{
-        transform: translatey(0);
-    }
-    to {
-        transform: translatey(2rem);
-
-    }
-}
-
-/* main div of all movies */
-
-.dark {
-    height: 35rem;
-    width: 19rem;
-    background-color: #770c97;
-    animation-name: darker;
-    border: 2px solid rgba(255, 255, 255, 0.651);
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.dark:hover {
-    border: 2px solid white;
-}
-
-/* /div */
-
-.pic-one {
-    background-image: url("dark.webp");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-.pic:active {
-    border: 2px solid white;
-}
-
-/* box 2 */
-
-.pic-two {
-    background-image: url("secret\ building.png");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-.pic-one-text {
-    text-align: center;
-    margin-top: 0;
-    padding: 1rem;
-    font-size: small;
-}
-
-/* box 3 */
-
-.pic-three {
-    background-image: url("Tarot.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 4 */
-
-.pic-four {
-    background-image: url("Ouija.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 5 */
-
-.pic-five {
-    background-image: url("unborn.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 6 */
-
-.pic-six {
-    background-image: url("rings.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 7 */
-
-.pic-seven {
-    background-image: url("bagman.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 8 */
-
-.pic-eight {
-    background-image: url("evel\ dead.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* section 2 */
-
-/* box 2,1 */
-
-.sec2-pic-one {
-    background-image: url("Alpha.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 2,2 */
-
-.sec2-pic-two {
-    background-image: url("angels.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 2,3 */
-
-.sec2-pic-three {
-    background-image: url("braven.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 2,4 */
-
-.sec2-pic-four {
-    background-image: url("every.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 2,5 */
-
-.sec2-pic-five {
-    background-image: url("johanwick.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 2,6 */
-
-.sec2-pic-six {
-    background-image: url("Poster.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 2,7 */
-
-.sec2-pic-seven {
-    background-image: url("troy2.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-
-/* box 2,8 */
-
-.sec2-pic-eight {
-    background-image: url("Hercules\ Full\ Movie\ Online.jpeg");
-    background-size: cover;
-    margin: 1rem;
-    height: 25rem;
-    border: 1px solid transparent;
-}
-    </style>
 </head>
 <body>
     <section>
@@ -448,7 +36,7 @@ h1 {
     </section>
     <section>
         <hr>
-        <h1>horror movies</h1>
+        <h1>Horror Movies</h1>
         <hr>
         <div class="firstRow"> 
             <div class="dark">
@@ -507,7 +95,7 @@ h1 {
     </section>
     <section>
         <hr>
-        <h1>action movies</h1>
+        <h1>Action Movies</h1>
         <hr>
         <div class="firstRow"> 
             <div class="dark">
@@ -565,5 +153,47 @@ h1 {
         </div>
     </section>
 </body>
+<footer>
+    <div class="back-box">
+        <a href="#">Back To Top</a>
+    </div>
+    <div class="mainfooter">
+        <div class="text-contect">
+            <div class="textbox-one">
+                <h3 class="textbox-head">Get to Know Us</h3>
+                <a id="space" href="#">About low price products</a>
+                <a href="#">career</a>
+                <a href="#">Press Releases</a>
+                <a href="#">low price products Science</a>
+            </div>
+            <div class="textbox-one">
+                <h3 class="textbox-head">Connect with Us</h3>
+                <a id="space" href="#">Facebook</a>
+                <a href="#">whatsapp</a>
+                <a href="https://www.instagram.com/javeed04x/" target="_main">instagram</a>
+                <a href="mailto:globlegamer06@gmail.com?subject=low%20price%20product%20helpmail">email</a> <!--HAMZAH6360-->
+            </div>
+            <div class="textbox-one">
+                <h3 class="textbox-head">Make Money with Us</h3>
+                <a href="#">Sell on our company</a>
+                <a href="#">Sell under our company Accelerator</a><br>
+                <a href="#">Protect and Build Your Brand</a><br>
+                <a href="#">products Global Selling</a>
+                <a href="#"> Supply to our company</a>
+                <a href="#">Become an Affiliate </a>
+                <a href="#"> Fulfilment by low price products</a><br>
+                <a href="#">Advertise Your Products </a>
+            </div>
+            <div class="textbox-one">
+                <h3 class="textbox-head">Let Us Help You</h3>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">Recalls and Product Safety Alerts</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Help </a>
+            </div>
+        </div>
+</footer>
 <script src="port.js"></script>
+</html>
 </html>
