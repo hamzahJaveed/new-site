@@ -412,10 +412,10 @@
 // companies.push();
 // console.log(companies);
 
-function myFun(a, b) {
-    wed = [a+b, a-b, a*b];
-    return wed;
-}
+// function myFun(a, b) {
+//     wed = [a+b, a-b, a*b];
+//     return wed;
+// }
 
-let val = myFun(4, 3);
-console.log(val);
+// let val = myFun(4, 3);
+// console.log(val);
