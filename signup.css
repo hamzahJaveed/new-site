@@ -45,7 +45,7 @@ h1 {
 
 .inputBox {
     height: 12rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -96,12 +96,13 @@ h1 {
 .buttonBox {
     display: flex;
     justify-content: center;
+    margin-top: 4rem;
 }
 
 button {
     height: 3rem;
     width: 7rem;
-    background-color: #b700ff;
+    background-color: rgb(183, 0, 255);
     font-weight: bolder;
     font-size: large;
     border: 2px solid black;

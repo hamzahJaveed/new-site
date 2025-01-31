@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ec86fa;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #b31cc7;
+    box-shadow: 4rem rgba(255, 0, 0, 0.973);
+    border-radius: 8px;
+    animation: loginDivAni 400ms 0.5s 1 ease-in forwards;
+
+}
+
+@keyframes loginDivAni {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(7%);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #500c6baf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: teal;
+}
+
+a {
+    display: block;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
