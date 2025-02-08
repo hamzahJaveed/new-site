@@ -2,20 +2,20 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
-    padding: 0,1rem;
+    padding: 0, 1rem;
 }
 
 body {
     background-color: #b31cc7;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 /* nevbar */
 
 .nevbar {
-    height: 5rem;
-    width: 100%;
+    height: 6rem;
+    width: 100vw;
     background-color: #441752;
     display: flex;
     align-items: center;
@@ -31,7 +31,6 @@ body {
     background-image: url("logoj.jpg");
     background-size: cover;
     border-radius: 50%;
-    
 }
 
 .border {
@@ -58,7 +57,7 @@ body {
 }
 
 .border1 {
-    border: 2px solid transparent;    
+    border: 2px solid transparent;
 }
 
 .border1:hover {
@@ -71,7 +70,7 @@ body {
     height: 2.8rem;
     width: 7.5rem;
     background-color: rgba(0, 0, 0, 0.842);
-    border-radius:  .5rem;
+    border-radius: .5rem;
     padding-left: 0.5rem;
 }
 
@@ -94,11 +93,11 @@ option {
 /* input */
 
 input {
-    height: 2.8rem ;
+    height: 2.8rem;
     width: 14rem;
     background-color: rgb(243, 217, 231);
-    font-size:medium;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 1rem;
     color: black;
     border-radius: 0.5rem;
@@ -110,8 +109,8 @@ input {
 .sarIcon {
     background-color: transparent;
     color: black;
-    font-size:x-large;
-    margin-left: 1rem;        
+    font-size: x-large;
+    margin-left: 1rem;
 }
 
 .sarIcon:hover {
@@ -136,9 +135,9 @@ input {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    align-items:start;
+    align-items: start;
     border-bottom: 2px solid transparent;
-    font-size:medium;
+    font-size: medium;
     animation: first 1s 1 ease-out forwards;
 
 }
@@ -146,8 +145,9 @@ input {
 @keyframes first {
     from {
         transform: translatey(0%);
-        position:relative;
+        position: relative;
     }
+
     to {
         transform: translatey(2rem);
     }
@@ -186,7 +186,7 @@ input {
     background-color: rgba(0, 0, 0, 0.281);
 }
 
-.menuIcon:hover{
+.menuIcon:hover {
     color: rgb(238, 255, 0);
 }
 
@@ -194,7 +194,7 @@ input {
 /* film row 1  */
 
 h1 {
-    height: 5rem;
+    height: 4rem;
     padding-left: 5rem;
     background-color: rgba(43, 40, 43, 0.459);
     display: flex;
@@ -209,10 +209,15 @@ h1 {
     justify-content: space-evenly;
 }
 
+.firstRow a {
+    text-decoration: none;
+}
+
 @keyframes darker {
-    from{
+    from {
         transform: translatey(0);
     }
+
     to {
         transform: translatey(2rem);
 
@@ -225,7 +230,7 @@ h1 {
     height: 35rem;
     width: 19rem;
     background-color: #441752;
-    animation-name: darker;
+    /* animation-name: darker; */
     border: 2px solid rgba(255, 255, 255, 0.651);
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -244,10 +249,12 @@ h1 {
     margin: 1rem;
     height: 25rem;
     border: 1px solid transparent;
+    transition: transoform 0.3s ease;
 }
 
 .pic:active {
     border: 2px solid white;
+    transform: translateY(-5px);
 }
 
 /* box 2 */
@@ -409,7 +416,7 @@ h1 {
     border: 1px solid transparent;
 }
 
-.back-box a{
+.back-box a {
     height: 50px;
     width: 100%;
     background-color: #770c97c5;
@@ -420,49 +427,141 @@ h1 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: small;
+    font-size: medium;
+    font-weight: bold;
 }
 
-.mainfooter {
-    height: 400px;
-    width: 100%;
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footerBody {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Footer styles */
+.footer {
     background-color: #441752;
+    color: #ecf0f1;
+    padding: 3rem 0 1rem;
 }
 
-.text-contect {
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    align-content: space-evenly;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-.textbox-one {
-    height: 295px;
-    width: 130px;
-    color: white;
-    text-align:left;
-    text-wrap: wrap;
+.footer-section {
+    flex: 1;
+    margin-bottom: 2rem;
+    min-width: 200px;
 }
 
-.textbox-head {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 10px;
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #3498db;
 }
 
-.textbox-head-body {
-    font-size: 0.9rem;
-    font-weight: normal;
+.footer-section ul {
     list-style-type: none;
-    text-decoration: none;
-    color: white;
 }
 
-.textbox-one a {
-    height: 2rem;
-    width: 150px;
-    display: flex;
-    text-decoration: none;
-    color: #cccccc;
-    font-size: small;
+.footer-section ul li {
+    margin-bottom: 0.5rem;
 }
+
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #3498db;
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    color: #ecf0f1;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+/* Newsletter form */
+.newsletter-form {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.newsletter-form input[type="email"] {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Copyright bar */
+.copyright {
+    height: 5rem;
+    background-color: #2f1138;
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #34495e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nevbar {
+        flex-direction: column;
+    }
+
+    .nevbar {
+        margin-bottom: 2rem;
+    }
+}
+

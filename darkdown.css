@@ -1,0 +1,214 @@
+* {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0;
+}
+
+body {
+    background-color: #730e9b;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* nevbar */
+
+.nevbar {
+    height: 6rem;
+    width: 100vw;
+    background-color: #441752;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed; top: 0%;
+}
+
+/* logo */
+
+.nevlogo {
+    height: 4rem;
+    width: 4rem;
+    background-image: url("logoj.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.border {
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.border:hover {
+    border: 2px solid rgb(255, 255, 255, 0.800);
+}
+
+/* search bar*/
+
+.searchBar {
+    height: 3.5rem;
+    width: 27rem;
+    color: white;
+    background-color: #b31cc7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.border1 {
+    border: 2px solid transparent;
+}
+
+.border1:hover {
+    border: 2px solid rgb(255, 255, 255, 0.800);
+}
+
+/* select */
+
+#select {
+    height: 2.8rem;
+    width: 7.5rem;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: .5rem;
+    padding-left: 0.5rem;
+}
+
+option {
+    background-color: #b31cc7;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid rgb(255, 255, 255, 0.800);
+}
+
+/* input */
+
+input {
+    height: 2.8rem;
+    width: 14rem;
+    background-color: rgb(243, 217, 231);
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 1rem;
+    color: black;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+}
+
+/* search icon */
+
+.sarIcon {
+    background-color: transparent;
+    color: black;
+    font-size: x-large;
+    margin-left: 1rem;
+}
+
+.sarIcon:hover {
+    color: rgb(238, 255, 0);
+}
+
+/* helping tools */
+
+.helps {
+    height: 5rem;
+    width: 30rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.tools {
+    height: 2rem;
+    width: 6rem;
+    background-color: transparent;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-bottom: 2px solid transparent;
+    font-size: medium;
+    animation: first 1s 1 ease-out forwards;
+
+}
+
+@keyframes first {
+    from {
+        transform: translatey(0%);
+        position: relative;
+    }
+
+    to {
+        transform: translatey(2rem);
+    }
+}
+
+.tools:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 15%;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: 700;
+}
+
+.extra {
+    width: 8rem;
+}
+
+/* menuIcon */
+
+.menuParent {
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.menuIcon {
+    font-size: larger;
+}
+
+.menuParent:hover {
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+.menuIcon:hover {
+    color: rgb(238, 255, 0);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: pink; */
+}
+
+.lorem {
+    height: 30rem;
+    width: 70vw;
+    /* text-wrap: 2rem; */
+    margin-top: 10rem;
+    margin-left: 2rem;
+    /* background-color: lightblue; */
+}
+
+.darkImg {
+    height: 30rem;
+    width: 20rem;
+    background-image: url("dark.webp");
+    background-size: cover;
+    margin: 10rem 0 0 3rem;
+}
